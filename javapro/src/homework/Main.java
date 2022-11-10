@@ -29,7 +29,8 @@ public class Main {
     list.add(new Product(1016, "magazine", 350.00f, false,
         LocalDateTime.of(2022, 10, 20, 12, 30)));
 
-    // Метод получения всех продуктов в виде списка, категория которых эквивалентна “Book” и цена более чем 250.
+    /** method to get all products as a list whose category is equivalent to "Book" and
+     * price over 250.*/
     System.out.println("TASK 1");
     float priceValue = 250.00f;
     String categorySearch = "book";
@@ -41,9 +42,9 @@ public class Main {
     System.out.println("");
 
 
-    /* Метод получения всех продуктов в виде списка, категория которых эквивалентна “Book”
-    и с возможностью применения скидки. Финальный список должен содержать продукты с уже
-    примененной скидкой 10%.*/
+    /** Method for getting all products as a list whose category is equivalent to “Book”
+     * and with the possibility of applying a discount. The final list must contain products with already
+     * applied 10% discount.*/
     System.out.println("TASK 2");
     int discountValue = 10;
     String categoryDiscount = "book";
@@ -55,9 +56,9 @@ public class Main {
     System.out.println(collectionTask2);
     System.out.println("");
 
-    /* Метод получения самого дешевого продукта из категории “Book”.
-    В случае, если ни один продукт не найден (ситуация, когда нет продукта с искомой категорией),
-    выбросить исключение с сообщением “Продукт [категория: имя_категории] не найден”. */
+    /** The method of obtaining the cheapest product from the “Book” category.
+     * In case no product is found (situation when there is no product with the category you are looking for),
+     * throw an exception with the message “Product [category: category_name] not found”. */
     System.out.println("TASK 3");
     try {
       String category = "journal";
@@ -73,7 +74,7 @@ public class Main {
     }
     System.out.println("");
 
-    //метод получения трех последних добавленных продуктов
+    /**method to get the last three added products*/
     System.out.println("TASK 4");
     int level = 3;
     List<Product> collectionTask4 = list.stream()
@@ -83,7 +84,7 @@ public class Main {
     System.out.println(collectionTask4);
     System.out.println("");
 
-    //метод калькуляции общей стоимости продуктов, которые отвечаю следующим критериям
+    /**method of calculating the total cost of products that meet the following criteria*/
     System.out.println("TASK 5");
     String categorySum = "book";
     float categoryPrice = 75.00f;
@@ -97,8 +98,8 @@ public class Main {
     System.out.println(collectionTask5);
     System.out.println("");
 
-    /* Метод группирования объектов по типу продукта. Таким образом результатом выполнения
-    метода будет тип данных “Словарь” хранящий пару ключ-значение: {тип: список_продуктов}.*/
+    /** Method for grouping objects by product type. Thus, the result of executing
+     method will be a data type “Dictionary” storing a key-value pair: {type: list_of_products}.*/
     System.out.println("TASK 6");
     Map<String, List<Product>> collectionTask6 = new HashMap<>();
     list.stream()
