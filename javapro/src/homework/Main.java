@@ -29,7 +29,7 @@ public class Main {
     list.add(new Product(1016, "magazine", 350.00f, false,
         LocalDateTime.of(2022, 10, 20, 12, 30)));
 
-    /** method to get all products as a list whose category is equivalent to "Book" and
+    /* method to get all products as a list whose category is equivalent to "Book" and
      * price over 250.*/
     System.out.println("TASK 1");
     float priceValue = 250.00f;
@@ -42,7 +42,7 @@ public class Main {
     System.out.println("");
 
 
-    /** Method for getting all products as a list whose category is equivalent to “Book”
+    /* Method for getting all products as a list whose category is equivalent to “Book”
      * and with the possibility of applying a discount. The final list must contain products with already
      * applied 10% discount.*/
     System.out.println("TASK 2");
@@ -56,7 +56,7 @@ public class Main {
     System.out.println(collectionTask2);
     System.out.println("");
 
-    /** The method of obtaining the cheapest product from the “Book” category.
+    /* The method of obtaining the cheapest product from the “Book” category.
      * In case no product is found (situation when there is no product with the category you are looking for),
      * throw an exception with the message “Product [category: category_name] not found”. */
     System.out.println("TASK 3");
@@ -74,7 +74,7 @@ public class Main {
     }
     System.out.println("");
 
-    /**method to get the last three added products*/
+    /*method to get the last three added products*/
     System.out.println("TASK 4");
     int level = 3;
     List<Product> collectionTask4 = list.stream()
@@ -84,7 +84,7 @@ public class Main {
     System.out.println(collectionTask4);
     System.out.println("");
 
-    /**method of calculating the total cost of products that meet the following criteria*/
+    /*method of calculating the total cost of products that meet the following criteria*/
     System.out.println("TASK 5");
     String categorySum = "book";
     float categoryPrice = 75.00f;
@@ -98,7 +98,7 @@ public class Main {
     System.out.println(collectionTask5);
     System.out.println("");
 
-    /** Method for grouping objects by product type. Thus, the result of executing
+    /* Method for grouping objects by product type. Thus, the result of executing
      method will be a data type “Dictionary” storing a key-value pair: {type: list_of_products}.*/
     System.out.println("TASK 6");
     Map<String, List<Product>> collectionTask6 = new HashMap<>();

@@ -31,7 +31,7 @@ public class Product {
     return isDiscount;
   }
 
-  //this method applies discount to the price of Product
+  /**this method applies discount to the price of Product*/
   public void discount(int discount) {
     this.price *= (float) (100 - discount) / 100;
   }
